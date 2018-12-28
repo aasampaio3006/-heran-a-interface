@@ -1,18 +1,20 @@
-package br.com.model;
+package br.com.funcionario.model;
 
 
-//nao pode instanciar dessa classe, pq Ã© abstrata
-public class Funcionario {
+//nao pode instanciar dessa classe, pq é abstrata
+public abstract class Funcionario {
 		
 	private String nome;
 	private String cpf;
 	private double salario;
-	
-	
-	 public double getBonificacao() {
-         return this.salario * 0.1;
-     }
-	
+
+
+//	 public double getBonificacao() {
+//         return this.salario * 0.05;
+//     }
+	//metodo abstract sem corpo, nao ha implementacao
+	 public abstract double getBonificacao();
+
 	
 	public String getNome() {
 		return nome;
@@ -34,6 +36,4 @@ public class Funcionario {
 	}
 	
 	
-	
-
 }
